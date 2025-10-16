@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "functions": {
+    "dist/api/**/*.js": {
+      "runtime": "nodejs20.x",
+      "maxDuration": 60
+    }
+  }
+}
