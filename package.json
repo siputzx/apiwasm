@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vercel dev",
-    "start": "node wasm.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "hono": "^4.10.0"
