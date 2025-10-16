@@ -1,0 +1,16 @@
+{
+  "name": "apiwasm",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "vercel dev",
+    "start": "node dist/api/wasm.js"
+  },
+  "dependencies": {
+    "hono": "^4.10.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
