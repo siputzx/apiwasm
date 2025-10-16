@@ -1,13 +1,16 @@
-import { Hono } from 'hono';
-import { handle } from 'hono/vercel';
+import { Hono } from 'hono'
+import { handle } from 'hono/vercel'
 
-export const config = {
-  runtime: 'nodejs',
-  maxDuration: 60
-};
+const app = new Hono().basePath('/api')
 
-const app = new Hono();
+app.get('/', (c) => {
+  return c.json({ message: "Congrats! You've deployed Hono to Vercel" })
+})
 
-app.get('/', c => c.text('Hello World!'));
+const handler = handle(app);
 
-export default handle(app);
+export const GET = handler;
+export const POST = handler;
+export const PATCH = handler;
+export const PUT = handler;
+export const OPTIONS = handler;
