@@ -2,7 +2,7 @@ import { Hono } from 'hono';
 import { handle } from 'hono/vercel';
 
 export const config = {
-  runtime: 'nodejs20.x',
+  runtime: 'nodejs',
   maxDuration: 60
 };
 
