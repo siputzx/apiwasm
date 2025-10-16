@@ -10,7 +10,7 @@ export const config = {
 
 const app = new Hono();
 
-const wasmPath = path.resolve('./file.wasm');
+const wasmPath = path.resolve('./sha3_wasm_bg.wasm');
 let wasmBuffer = null;
 const CACHE_TTL = 3600000;
 let lastLoaded = 0;
